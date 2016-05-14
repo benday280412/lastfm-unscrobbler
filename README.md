@@ -5,7 +5,7 @@ The unscrobbler depends uses the latest tracks API from Last.fm and so requires 
 
 ##Usage info
 
-  A tool to unscrobble tracks from a list of artists
+    A tool to unscrobble tracks from a list of artists
 
   Usage
     lastfm-unscrobbler -u -p -k -a [-g]
