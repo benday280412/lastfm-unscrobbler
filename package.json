@@ -2,10 +2,12 @@
   "name": "lastfm-unscrobbler",
   "version": "0.0.1",
   "description": "A tool to unscrobble tracks from a list of artists",
-  "main": "lastfm-unscrobbler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin" : {
+    "lastfm-unscrobbler": "lastfm-unscrobbler.js"
+    },
   "author": "Ben Day",
   "license": "ISC",
   "dependencies" : {

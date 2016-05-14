@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var request = require("request");
 var async = require("async");
 var bunyan = require('bunyan');
