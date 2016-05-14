@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/ben/dev/lastfm-unscrobbler',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/ben/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/ben/.npm/lastfm-unscrobbler/0.0.1/package.tgz',
+10 verbose tar pack   '/Users/ben/dev/lastfm-unscrobbler' ]
+11 verbose tarball /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package.tgz
+12 verbose folder /Users/ben/dev/lastfm-unscrobbler
+13 info prepublish lastfm-unscrobbler@0.0.1
+14 verbose addLocalTarball adding from inside cache /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package.tgz
+15 verbose correctMkdir /Users/ben/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd lastfm-unscrobbler@0.0.1
+17 verbose afterAdd /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/ben/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package/package.json written
+20 silly publish { name: 'lastfm-unscrobbler',
+20 silly publish   version: '0.0.1',
+20 silly publish   description: 'A tool to unscrobble tracks from a list of artists',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   bin: { 'lastfm-unscrobbler': 'lastfm-unscrobbler.js' },
+20 silly publish   author: { name: 'Ben Day' },
+20 silly publish   license: 'ISC',
+20 silly publish   dependencies:
+20 silly publish    { request: '2.72.0',
+20 silly publish      async: '2.0.0-rc.4',
+20 silly publish      bunyan: '1.8.1',
+20 silly publish      minimist: '1.2.0',
+20 silly publish      meow: '3.7.0' },
+20 silly publish   readme: '#lastfm-unscrobbler\nA simple node app to unscrobble artists from your Last.fm account\n\nThe unscrobbler depends uses the latest tracks API from Last.fm and so requires an API key to be able to access the API.  Simply head over to the [Last.fm Developer Portal](http://www.last.fm/api/account/create) and create an API account.  Last.fm will then issue you with an API key.\n\n##Usage info\n\n    A tool to unscrobble tracks from a list of artists\n\n    Usage\n\t  lastfm-unscrobbler -u -p -k -a [-g]\n      lastfm-unscrobbler -h | --help\n      lastfm-unscrobbler -v | --version\n\n    Options\n      -u, --username  Last.fm username\n      -p, --password  Last.fm password\n      -g, --pages  Number of pages to get\n      -k, --apiKey  API key to access Last.fm API\n      -a, --artists  Comma seperated list of artists to unscrobble\n      -h, --help Show  this help message\n      -v, --version  Show version information\n\n    Example\n      $ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles"\n\n##Logging\n\nLogging is managed by [bunyan](https://github.com/trentm/node-bunyan), pipe the log output to bunyan for pretty logging.\n\n\t$ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles" | ./node_modules/bunyan/bin/bunyan\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '2b5019ac1c046e173e02a707b5e4858a8104eaf5',
+20 silly publish   _id: 'lastfm-unscrobbler@0.0.1',
+20 silly publish   _shasum: '45097a48fcd7f148b600abc1bf2715bef1b7ec0b',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name lastfm-unscrobbler
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'lastfm-unscrobbler',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'lastfm-unscrobbler',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/lastfm-unscrobbler
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/ben/.npm/lastfm-unscrobbler/0.0.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/lastfm-unscrobbler
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 10:03:21 PM
+32 verbose request using bearer token for auth
+33 verbose request id 7ceb05bd21f6e52c
+34 http request PUT https://registry.npmjs.org/lastfm-unscrobbler
+35 http 403 https://registry.npmjs.org/lastfm-unscrobbler
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 14 May 2016 21:03:19 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1463259798.383403,VS0,VE901',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/ben/.npm/registry.npmjs.org/lastfm-unscrobbler on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : lastfm-unscrobbler
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid lastfm-unscrobbler
+42 verbose cwd /Users/ben/dev/lastfm-unscrobbler
+43 error Darwin 15.4.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.4.3
+46 error npm  v2.15.1
+47 error code E403
+48 error "You cannot publish over the previously published version 0.0.1." : lastfm-unscrobbler
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
