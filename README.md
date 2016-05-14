@@ -1,7 +1,7 @@
 #lastfm-unscrobbler
 A simple node app to unscrobble artists from your Last.fm account
 
-The unscrobbler depends uses the latest tracks API from Last.fm and so requires an API key to be able to access the API.  Simply head over to the [Last.fm Developer Portal]http://www.last.fm/api/account/create and create an API account.  Last.fm will then issue you with an API key.
+The unscrobbler depends uses the latest tracks API from Last.fm and so requires an API key to be able to access the API.  Simply head over to the [Last.fm Developer Portal](http://www.last.fm/api/account/create) and create an API account.  Last.fm will then issue you with an API key.
 
 ##Usage info
 
@@ -26,6 +26,6 @@ The unscrobbler depends uses the latest tracks API from Last.fm and so requires 
 
 ##Logging
 
-Logging is managed by [bunyan]https://github.com/trentm/node-bunyan, pipe the log output to bunyan for pretty logging.
+Logging is managed by [bunyan](https://github.com/trentm/node-bunyan), pipe the log output to bunyan for pretty logging.
 
 	$ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles" | ./node_modules/bunyan/bin/bunyan
