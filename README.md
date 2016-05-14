@@ -7,22 +7,22 @@ The unscrobbler depends uses the latest tracks API from Last.fm and so requires 
 
     A tool to unscrobble tracks from a list of artists
 
-  Usage
-    lastfm-unscrobbler -u -p -k -a [-g]
-    lastfm-unscrobbler -h | --help
-    lastfm-unscrobbler -v | --version
+    Usage
+	  lastfm-unscrobbler -u -p -k -a [-g]
+      lastfm-unscrobbler -h | --help
+      lastfm-unscrobbler -v | --version
 
-  Options
-    -u, --username  Last.fm username
-    -p, --password  Last.fm password
-    -g, --pages  Number of pages to get
-    -k, --apiKey  API key to access Last.fm API
-    -a, --artists  Comma seperated list of artists to unscrobble
-    -h, --help Show  this help message
-    -v, --version  Show version information
+    Options
+      -u, --username  Last.fm username
+      -p, --password  Last.fm password
+      -g, --pages  Number of pages to get
+      -k, --apiKey  API key to access Last.fm API
+      -a, --artists  Comma seperated list of artists to unscrobble
+      -h, --help Show  this help message
+      -v, --version  Show version information
 
-  Example
-    $ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles"
+    Example
+      $ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles"
 
 ##Logging
 
