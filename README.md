@@ -1,11 +1,15 @@
 #lastfm-unscrobbler
-A simple node app to unscrobble artists from your Last.fm account
+A simple command line node app to unscrobble artists from your Last.fm account
 
 The unscrobbler depends uses the latest tracks API from Last.fm and so requires an API key to be able to access it.  Simply head over to the [Last.fm Developer Portal](http://www.last.fm/api/account/create) and create an API account.  Last.fm will then issue you with an API key.
 
+##Installation
+
+    npm install -g lastfm-unscrobbler
+
 ##Usage info
 
-    A tool to unscrobble all tracks from a list of artists
+    A command line tool to unscrobble all tracks from a list of artists
 
     Usage
       lastfm-unscrobbler -u -p -k -a [-g]
