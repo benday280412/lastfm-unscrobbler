@@ -1,14 +1,23 @@
 {
   "name": "lastfm-unscrobbler",
-  "version": "0.0.4",
-  "description": "A tool to unscrobble all tracks from a list of artists",
+  "version": "0.0.6",
+  "description": "A command line tool to unscrobble all tracks from a list of artists",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin" : {
     "lastfm-unscrobbler": "lastfm-unscrobbler.js"
     },
-  "author": "Ben Day",
+  "author": {
+    "name": "Ben Day",
+    "email": "ben.day.280412@gmail.com"
+    },
+  "keywords": [
+    "cli",
+    "lastfm",
+    "unscrobble",
+    "cmd"
+  ],
   "license": "ISC",
   "dependencies" : {
   	"request" : "2.72.0",
