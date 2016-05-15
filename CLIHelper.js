@@ -6,7 +6,9 @@ var self;
 
 const cli = meow(`
     Usage
-      $ foo <input>
+      lastfm-unscrobbler -u -p -k -a [-g]
+      lastfm-unscrobbler -h | --help
+      lastfm-unscrobbler -v | --version
 
     Options
       -u, --username  Last.fm username
@@ -17,8 +19,8 @@ const cli = meow(`
       -h, --help Show  this help message
       -v, --version  Show version information
 
-    Examples
-      $ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles"`, 
+    Example
+      $ lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles"`, 
     {
       	alias: {
       		u: 'username',
