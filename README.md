@@ -8,7 +8,7 @@ The unscrobbler depends uses the latest tracks API from Last.fm and so requires 
     A tool to unscrobble all tracks from a list of artists
 
     Usage
-	    lastfm-unscrobbler -u -p -k -a [-g]
+      lastfm-unscrobbler -u -p -k -a [-g]
       lastfm-unscrobbler -h | --help
       lastfm-unscrobbler -v | --version
 
@@ -28,4 +28,4 @@ The unscrobbler depends uses the latest tracks API from Last.fm and so requires 
 
 Logging is managed by [bunyan](https://github.com/trentm/node-bunyan), pipe the log output to bunyan for pretty logging.
 
-	$ node ./lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles" | ./node_modules/bunyan/bin/bunyan
+	$ lastfm-unscrobbler -u joe_bloggs -p pa55w0rd -k 47a4f5eejhd94wpodi309444274145aa5 -a "Queen, The Eagles" | bunyan
