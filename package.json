@@ -1,6 +1,6 @@
 {
   "name": "lastfm-unscrobbler",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A command line tool to unscrobble all tracks from a list of artists",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

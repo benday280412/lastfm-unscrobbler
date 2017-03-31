@@ -8,6 +8,8 @@ var CLIHelper = require("./CLIHelper");
 
 require('http').globalAgent.maxSockets = 10
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 var jar = request.jar();
 var json = {csrftoken : ""};
 var log = bunyan.createLogger({name: 'server'});
@@ -145,6 +147,9 @@ function unscrobble(csrftoken, artistName, trackName, date){
 	request.post({
 		url:settings.unscrobbleUrl, 
 		jar: jar,
+		headers: {
+			'Referer': settings.profileUrl
+		},
 		form: {
 			csrfmiddlewaretoken:csrftoken,
 			artist_name:artistName,
